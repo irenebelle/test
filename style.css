@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('fonts/GothamPro-Black.eot');
+    src: url('fonts/GothamPro-Black.eot') format('embedded-opentype'),
+    url('fonts/GothamPro-Black.woff') format('woff'),
+    url('fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .accordeon {
+        height: 670px;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+  
+    }
+
+    .accordeon h2{
+       font-family: 'Gotham Pro Black', serif;
+       cursor: pointer;
+
+
+    }
+    .title {
+        transform: skewX(-15deg);
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    
+    }
+
+    .title.title1.close {
+        background-image: linear-gradient(to right bottom, #000000b0, #000000bb), url(img/agrotehnika.jpg);
+        background-position: center top;
+        width: 25%;
+        margin-left: -10%;
+    }
+    .title.title2.close {
+        background-image: linear-gradient(to right bottom, #000000b0, #000000bb), url(img/legkovoy.jpg);
+        background-position: center top;
+        width: 20%;
+
+    }
+    .title.title3.close {
+        background-image: linear-gradient(to right bottom, #000000b0, #000000bb), url(img/gruzoperevozki.jpg);
+        background-position: center top;
+        width: 20%;
+
+    }
+    .title.title4.close {
+        background-image: linear-gradient(to right bottom, #000000b0, #000000bb), url(img/spectehnika.jpg);
+        background-position: 40% bottom;
+        width: 20%;
+
+    }
+    .title.title5.close {
+        background-image: linear-gradient(to right bottom, #000000b0, #000000bb), url(img/zd_transport.jpg);
+        background-position: 70% bottom;
+      
+        background-repeat: no-repeat;
+        width: 30%;
+        margin-right: -10%;
+
+    }
+
+    .title.title1.open {
+        width: 50%;
+        margin-left: -10%;
+        padding-left: 10%;
+        padding-right: 0;
+        background-image: linear-gradient(to right bottom, #eeeeeee8, #eeeeeee0), url(img/agrotehnika.jpg);
+    } 
+    .title.title2.open {
+        width: 40%;
+        background-image: linear-gradient(to right bottom, #eeeeeee8, #eeeeeee0), url(img/legkovoy.jpg);
+    }
+    .title.title3.open {
+        width: 40%;
+        background-image: linear-gradient(to right bottom, #eeeeeee8, #eeeeeee0), url(img/gruzoperevozki.jpg);
+    } 
+    .title.title4.open {
+        width: 40%;
+        background-image: linear-gradient(to right bottom, #eeeeeee8, #eeeeeee0), url(img/spectehnika.jpg);
+        background-position: 40% bottom;
+
+    }
+    .title.title5.open {
+        background-image: linear-gradient(to right bottom, #eeeeeee8, #eeeeeee0), url(img/zd_transport.jpg);
+        width: 50%;
+        margin-right: -10%;
+        background-position: 70% bottom;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+
+   
+    .open .title-text {
+        display: block;
+        transform: skewX(15deg);
+
+    }
+    .open h2 {
+        font-size: 40px;
+        transform: skewX(15deg);
+        margin-top: 100px;
+        padding-left: 5%;
+
+    }
+    .close {
+     
+        height: 670px;
+
+    }
+
+    .close .title-text {
+        display: none;
+    }
+
+    .close h2 {
+        
+        transform: skewX(15deg) rotate(-75deg);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        font-weight: 900;
+     
+        font-size: 55px;
+        position: relative;
+        top: 262px;
+        color: #808080;
+    }
+
+.title.title1.close h2 {
+    margin-left: 100px;
+}
+.title.title5.close h2 {
+    margin-left: -150px;
+}
+
+    .title-text {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        width: 60%;
+        margin-top: 70px;
+        position: relative;
+
+
+    }
+  
+    .title-text p, .title-text ul li {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 1.5;
+
+
+    }
+    .title-text ul {
+        list-style: none;
+    }
+
+    .title-text ul li:before {
+        float: left;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #1c7fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: 7px;
+   
+    }
+
+    .title-text p {
+        font-weight: 700;
+        margin-left: -15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .main-part {
+        max-width: 1280px;
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+
+    .testimonials {
+        width: 440px;
+        padding: 20px;
+    }
+    .testimonials h2 {
+        font-family: 'Gotham Pro Black', serif;
+        font-size: 50px;
+    }
+
+    .testimonials p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 33px;
+        margin-top: 40px;
+    }
+
+    .testimonials button {
+        background-color: #1c7fff;
+        width: 240px;
+        height: 60px;
+        color: #fff;
+        font-family: 'Gotham Pro Black', serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        border: 0;
+        margin-top: 50px;
+        cursor: pointer;
+
+    }
+
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        width: 700px;
+        height: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.863);
+        box-shadow: -2px 2px 12px 0px rgba(0,0,0,0.62);
+        text-align: center;
+     
+    
+    
+    }
+
+    .popup h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+        font-family: "Roboto";
+        font-weight: 400;
+
+    }
+
+    .popup #close-button {
+        background-color: #1c7fff;
+        width: 240px;
+        height: 60px;
+        color: #fff;
+        font-family: 'Gotham Pro Black', serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        border: 0;
+        margin-top: 50px;
+        cursor: pointer;
+       
+    }
+
+    .logos {
+        width: 800px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+       width: 190px;
+       height: 90px;
+       text-align: center;
+       float: left;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-position: center center;
+       background-repeat: no-repeat;
+
+
+    }
+
+    .logo1 {
+        background-image: url(img/logo1.png);
+    }
+    .logo2 {
+        background-image: url(img/logo2.png);
+    }
+    .logo3 {
+        background-image: url(img/logo3.png);
+    }
+    .logo4 {
+        background-image: url(img/logo4.png);
+    }
+    .logo5 {
+        background-image: url(img/logo5.png);
+    }
+    .logo6 {
+        background-image: url(img/logo6.png);
+    }
+    .logo7 {
+        background-image: url(img/logo7.png);
+    }
+    .logo9 {
+        background-image: url(img/logo9.png);
+    }
+    .logo8 {
+        background-image: url(img/logo8.png);
+    }
+

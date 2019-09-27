@@ -1,0 +1,187 @@
+@media screen  and (max-width: 760px) {
+
+    .accordeon {
+        height: 440px;
+  
+    }
+    .title, .title h2, .title .title-text {
+        transform: skewX(0deg);
+    }
+
+    .title-text p, .title-text ul li {
+        font-size: 14px;
+    }
+
+    .title.close h2 {
+        transform: rotate(-90deg);
+        font-size: 36px;
+       top: 195px;
+          
+    }
+    .title-text {
+        padding-left: 10%;
+        margin-top: 30px;
+        width: 90%;
+        padding-right: 10%;
+    }
+
+    .title.title1.open {
+        padding-left: 0;
+    }
+
+  
+   
+
+    .title.title1.close, .title.title2.close, .title.title3.close, .title.title4.close, .title.title5.close {
+        margin-left: 0;
+        width: 12%;
+        margin-right: 0;
+    }
+    .title.title1.open, .title.title2.open, .title.title3.open, .title.title4.open, .title.title5.open {
+        width: 52%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .title.title1.close h2 {
+        margin-left: 0;
+    }
+    .title.title5.close h2 {
+        margin-left: 0;
+    }
+
+    .open h2 {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    .logos {
+        width: 400px;
+        height: 270px;
+    }
+
+
+    .testimonials h2 {
+        font-size: 36px;
+    }
+    .logo1 {
+        background-image: url(img/logo1_b.png);
+    }
+    .logo2 {
+        background-image: url(img/logo2_b.png);
+    }
+    .logo3 {
+        background-image: url(img/logo3_b.png);
+    }
+    .logo4 {
+        background-image: url(img/logo4_b.png);
+    }
+    .logo5 {
+        background-image: url(img/logo5_b.png);
+    }
+    .logo6 {
+        background-image: url(img/logo6_b.png);
+    }
+    .logo7 {
+        background-image: url(img/logo7_b.png);
+    }
+    .logo9 {
+        background-image: url(img/logo9_b.png);
+    }
+    .logo8 {
+        background-image: url(img/logo8_b.png);
+    }
+
+    .testimonials button {
+        width: 250px;
+        height: 50px;
+        position: absolute;
+        margin-top: 50px;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 20px;
+    }
+    .popup {
+        width: 90%;
+        height: 90vh;
+    }
+
+}
+
+@media screen  and (max-width: 320px) { 
+
+    .accordeon { 
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .title.title1.close, .title.title2.close, .title.title3.close, .title.title4.close, .title.title5.close { 
+     width: 100%;
+     height: 60px;
+     
+    }
+    .title.title1.open, .title.title2.open, .title.title3.open, .title.title4.open, .title.title5.open {
+        width: 100%;
+        height: 320px;
+    
+    }
+    .title-text p, .title-text ul li {
+        font-size: 12px;
+    }
+
+    .open h2 {
+        font-size: 24px;
+        margin-top: 10px;
+
+    }
+    .title-text {
+        padding-left: 10%;
+        margin-top: 10px;
+        width: 90%;
+        padding-right: 5%;
+    }
+
+
+    .title.close h2 {
+        transform: rotate(0deg);
+        font-size: 24px;
+        line-height: 60px;
+        top: 0px;
+          
+    }
+
+    .main-part {
+        flex-direction: column;
+    }
+    .testimonials {
+        width: 90%;
+        text-align: center;
+
+    }
+    .testimonials p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+    .testimonials button { 
+
+        margin-top: 300px;
+    }
+
+    .logos {
+        width: 100%;
+    }
+
+    .popup h2 { 
+        font-size: 16px;
+    }
+
+
+}
